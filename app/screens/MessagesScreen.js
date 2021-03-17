@@ -8,14 +8,14 @@ import ListItemDeleteAction from "../components/Lists/ListItemDeleteAction";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title: "Samuel Shih",
+    description: "How's it going I am trying to buy something",
     image: require("../assets/imgs/mosh.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "John Shih",
+    description: "Whatsup guys how's it going",
     image: require("../assets/imgs/mosh.jpg"),
   },
 ];
@@ -42,6 +42,7 @@ function MessagesScreen(props) {
             renderRightActions={() => (
               <ListItemDeleteAction onPress={() => handleDelete(item)} />
             )}
+            showChevron
           />
         )}
         ItemSeparatorComponent={ListItemSeparator}

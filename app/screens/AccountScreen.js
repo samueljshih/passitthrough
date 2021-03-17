@@ -32,6 +32,7 @@ function AccountScreen(props) {
           title="Moshy"
           subTitle="moshy@gmail.com"
           image={require("../assets/imgs/mosh.jpg")}
+          showChevron
         />
       </View>
       <View style={styles.container}>
