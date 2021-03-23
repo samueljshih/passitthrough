@@ -1,5 +1,16 @@
-import React, { useState } from "react";
-import { StyleSheet, Platform, StatusBar, View, TextInput } from "react-native";
+import React, { useState, useEffect } from "react";
+import {
+  StyleSheet,
+  Platform,
+  StatusBar,
+  View,
+  TextInput,
+  Button,
+  Image,
+} from "react-native";
+
+import * as ImagePicker from "expo-image-picker";
+import * as Permissions from "expo-permissions";
 
 import AppButton from "./app/components/AppButton";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
@@ -17,6 +28,8 @@ import AppPicker from "./app/components/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
 import RegisterScreen from "./app/screens/RegisterScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
+import ImageInput from "./app/components/ImageInput";
+import ImageInputList from "./app/components/ImageInputList";
 
 export default function App() {
   return <ListingEditScreen />;
